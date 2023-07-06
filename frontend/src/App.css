@@ -1,0 +1,369 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style:none ;
+}
+
+:root{
+  --body-color:#efefef;
+  --nav-color:#1876f2;
+  --bg-color:#fff;
+}
+.dark_theme{
+  --body-color:#0a0a0a;
+  --nav-color:#000;
+  --bg-color:#000;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: var(--body-color);
+  transition: background 0.3s;
+}
+
+
+/* Register and Login */
+.signup_container,.login_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  
+}
+.form_container{
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px 1px grey;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  height: fit-content;
+  width: 30%;
+  background-color: #fff;
+  position: relative;
+  
+}
+
+.signupform ,.loginform{
+  display: flex;
+  flex-direction: column;  
+  /* position: relative; */
+  /* border: 2px solid red; */
+
+}
+/* logo css for signup and login */
+.signupform  img{
+  width: 40%;
+  margin: .5rem auto;
+  display: block;
+  left: -.2rem;
+  /* position: relative;  */
+  
+} 
+.signupform h4{
+  text-align: center;
+  color: gray;
+  font-size: .8rem;
+  font-weight: 700;
+  margin: .7rem auto;
+
+}
+.signupform input{
+  /* position: relative; */
+  width: 80%;
+  height: 2rem;
+  max-height: 2rem;
+  min-height: 2rem;
+  margin: .5rem auto;
+  border: 1px solid #ccc;
+  border-radius: .3rem;
+  padding: .3rem; 
+  font-size: .8rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.signupform .password_input{
+  position: relative;
+  height: 2rem;
+  max-height: 2rem;
+  min-height: 2rem;  
+  padding: .3rem;
+  /* width: calc(100%-1.5rem);    */
+}
+.input_box .eye_icon {
+  width: 1.5rem;
+  position: absolute;
+  right: -14rem;
+  top: .8rem;
+  /* transform: translateY(-50%); */
+  cursor: pointer;
+}
+.signupform input[type="submit"]{
+  margin: 2rem;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: rgba(224, 32, 32, 0.963);
+
+}
+.signup_container a{
+  text-decoration: none;
+  color:#0D6EFD;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  margin: .5rem 0 ;
+  align-items: center;
+  justify-content: center;
+}
+.input_data button{
+  width:75%;
+  padding: 1rem;
+  border-radius: .4rem;
+  background-color: red;
+  margin: 2rem;
+  /* margin-right: 1.5rem; */
+}
+
+/* -------- Responsive @media query  css ----------- */
+
+@media screen and (max-width:2150px) {
+  
+  
+  .signupform input{
+    display: block;
+    width: 50%;    
+  }
+  .signupform input[type="submit"]{
+    margin: 2rem 0 2rem 9rem;
+
+  }
+  
+}
+@media  screen and (max-width:2050px) {
+ 
+  .signupform input[type="submit"]{
+    margin: 2rem 0 2rem 8.2rem;
+
+  }
+  
+}
+@media screen and (max-width:1950px) {
+  
+  .signupform input{
+    display: block;
+    width: 55%;    
+  }
+  .signupform input[type="submit"]{
+    margin: 2rem 0 2rem 6.9rem;
+  }
+  
+}
+@media screen and (max-width:1850px) {
+  
+  .signupform input{
+    display: block;
+    width: 60%;    
+  }
+  .signupform input[type="submit"]{
+    margin: 2rem 0 2rem 5.9rem;
+  }
+  
+}
+
+@media screen and (max-width:1650px) {
+  
+  .signupform input{
+    display: block;
+    width: 65%;    
+  }
+  .signupform input[type="submit"]{
+    margin: 2rem 0 2rem 4.8rem;
+  }
+  
+}
+@media screen and (max-width:1550px) {
+  
+  .signupform input{
+    display: block;
+    width: 70%;    
+  }
+  .signupform input[type="submit"]{
+    margin: 2rem 0 2rem 3.8rem;
+  }
+  
+}
+@media screen and (max-width:1450px) {
+  
+  .signupform input{
+    display: block;
+    width: 75%;    
+  }
+  .signupform input[type="submit"]{
+    margin: 2rem 0 2rem 2.8rem;
+  }
+  
+  
+}
+@media screen and (max-width:1350px) {
+  
+  .signupform input{
+    display: block;
+    width: 80%;    
+  }
+  .signupform input[type="submit"]{
+    margin: 2rem 0 2rem 1.7rem;
+  }
+  
+}
+@media screen and (max-width:1270px) {
+  
+  .signupform input{
+    display: block;
+    width: 85%;    
+  }
+  .signupform input[type="submit"]{
+    margin: 2rem 0 2rem 1.7rem;
+  }
+  .input_box .eye_icon {
+    right: -13rem;
+  }
+  
+}
+@media screen and (max-width:1170px) {
+ 
+  
+  .signupform input{
+    display: block;
+    width: 90%;    
+  }
+  .signupform input[type="submit"]{
+    margin: 2rem 0 2rem .9rem;
+  }
+  .input_box .eye_icon {
+    right: -12rem;
+
+  }
+  
+}
+@media screen and (min-width:950px) and (max-width:1070px) {
+ 
+  .signupform input{
+    display: block;
+    width: 100%;    
+  }
+  .signupform input[type="submit"]{
+    margin: 2rem 0 2rem 0rem;
+  }
+  .form_container{
+    width: 50%;
+  }
+  .input_box .eye_icon {
+    right: -22rem;
+  }
+}
+@media screen and (max-width:950px) {
+  
+  .input_box .eye_icon {
+    right: -14rem;
+  }
+  .form_container{
+    width: 40%;
+  }  
+}
+@media screen and (max-width:900px) {
+  
+  .input_box .eye_icon {
+    right: -12rem;
+  }
+  .form_container{
+    width: 40%;
+  }  
+}
+@media screen and (max-width:850px) {
+ 
+  .input_box .eye_icon {
+    right: -11rem;
+  }
+ 
+}
+@media screen and (max-width:750px) {
+  .input_box .eye_icon {
+    right: -9rem;
+  }
+  .form_container{
+    width: 40%;
+  }
+  
+}
+@media screen and (max-width:650px) {
+  .input_box .eye_icon {
+    right: -10rem;
+  }
+  .form_container{
+    width: 50%;
+  }
+  
+}
+@media screen and (max-width:550px) {
+  .form_container{
+    width: 60%;
+  }
+  .input_box .eye_icon {
+    right: -10rem;
+  }
+}
+@media screen and (max-width:450px) {
+  .form_container{
+    width: 70%;
+  }
+  .input_box .eye_icon {
+    right: -10rem;
+  }
+}
+@media screen and (max-width:400px) {
+  .form_container{
+    width: 70%;
+  }
+  .input_box .eye_icon {
+    right: -8rem;
+  }
+}
+@media screen and (max-width:350px) {
+  .form_container{
+    width: 80%;
+  }
+  .input_box .eye_icon {
+    right: -8rem;
+  }
+  
+}
+@media screen and (max-width:300px) {
+  .form_container{
+    width: 80%;
+  }
+  .input_box .eye_icon {
+    right: -6rem;
+  }
+  
+}
+@media screen and (max-width:250px) {
+  .form_container{
+    width: 90%;
+  }
+  .input_box .eye_icon {
+    right: -5.5rem;
+  }
+}
